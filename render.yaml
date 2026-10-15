@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cors-stats-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: APP_EMAIL
+        value: 24f2007662@ds.study.iitm.ac.in
